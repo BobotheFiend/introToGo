@@ -20,9 +20,11 @@ func main() {
 		fmt.Scanf("%d", &currentInput)
 
 		largestNumber = Largest(largestNumber, currentInput)
+
+		count++
 	}
 
-	fmt.Println(largestNumber)
+	fmt.Println("The LargestNumber = ", largestNumber)
 }
 
 func Largest(currentLargestNumber, target int) int {
