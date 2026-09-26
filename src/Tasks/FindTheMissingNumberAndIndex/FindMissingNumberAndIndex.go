@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-func main() {}
-
 func FindMissingNumberAndIndex(collection []int) []int {
 
 	var result []int
