@@ -30,3 +30,16 @@ func TestMissingNumberAndIndexInputTwo(t *testing.T) {
 		t.Error("Expected", expected, "Got", actual)
 	}
 }
+
+func TestMissingNumberAndIndexInputThree(t *testing.T) {
+
+	input := []int{3, 3, 4, 6, 8, 10}
+
+	actual := FindMissingNumberAndIndex(input)
+
+	expected := []int{5, 2, 7, 4, 9, 6}
+
+	if !reflect.DeepEqual(actual, expected) {
+		t.Error("Expected", expected, "Got", actual)
+	}
+}

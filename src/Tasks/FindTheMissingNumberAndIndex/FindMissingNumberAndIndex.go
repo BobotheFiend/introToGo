@@ -16,6 +16,12 @@ func FindMissingNumberAndIndex(collection []int) []int {
 		counter += 1
 		fmt.Println(counter, collection[count])
 
+		if collection[count] == collection[count-1] {
+			fmt.Println("The if when they are same", collection[count], collection[count-1])
+			counter = collection[count]
+			index -= 1
+		}
+
 		if collection[count] != counter {
 			fmt.Println(counter, index)
 			result = append(result, counter, index)
