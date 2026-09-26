@@ -55,6 +55,7 @@ func main() {
 	sliceItUp := make([]string, 4, 20)
 	copy(sliceItUp, items[1:5])
 	fmt.Println(sliceItUp)
+	fmt.Println("OKKKKKK//////// ", items[2])
 	fmt.Println("Slice It Up Length is = ", len(sliceItUp))
 	native := append(sliceItUp, items[len(items)-1], items[len(items)-2])
 	fmt.Println(native)

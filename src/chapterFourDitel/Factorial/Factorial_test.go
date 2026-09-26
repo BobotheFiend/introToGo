@@ -24,6 +24,6 @@ func TestFactorialForInput10(t *testing.T) {
 	expected := 3628800
 	if actual != expected {
 		t.Errorf("For input = %d, expected %d, got %d", input, expected, actual)
-
 	}
+
 }
