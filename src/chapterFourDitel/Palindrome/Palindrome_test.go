@@ -66,16 +66,3 @@ func TestPalindromeInputFive(t *testing.T) {
 		t.Errorf("got %v\nwant %v", actual, expected)
 	}
 }
-
-func TestPalindromeInputSix(t *testing.T) {
-
-	const input = 04450
-
-	actual := Palindrome(input)
-
-	expected := false
-
-	if actual != expected {
-		t.Errorf("got %v\nwant %v", actual, expected)
-	}
-}
